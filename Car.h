@@ -7,8 +7,8 @@
 
 
 #include "Vehicle.h"
-
-class Car: public Vehicle {
+using namespace std;
+class Car : public Vehicle {
 private:
     int doors;
 public:

@@ -5,7 +5,7 @@
 #include "Truck.h"
 #include "Vehicle.h"
 
-
+using namespace std;
 double Truck::getMaxTowing() const {
     return maxTowing;
 }

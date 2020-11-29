@@ -4,6 +4,7 @@
 
 #include "Car.h"
 #include <iostream>
+
 using namespace std;
 
 
@@ -14,7 +15,7 @@ int Car::getDoors() const {
 void Car::setDoors(int doors) {
     Car::doors = doors;
 }
-void Vehicle::displayInfo(Vehicle &any){
+void displayInfo(Vehicle &any){
     Car car;
 
     cout<<any.getManufact()<<endl;

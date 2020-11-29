@@ -6,8 +6,6 @@
 
 
 
-
-
 const string &Vehicle::getManufact() const {
     return manufact;
 }
@@ -24,7 +22,7 @@ void Vehicle::setYear(int year) {
     Vehicle::year = year;
 }
 
- void displayInfo(Vehicle &anyVehicle) {
+ void displayInfo(Vehicle anyVehicle) {
 
         cout << anyVehicle.getManufact() << endl;
         cout << anyVehicle.getYear() << endl;

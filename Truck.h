@@ -4,9 +4,9 @@
 
 #ifndef INHERITANCE_TRUCK_H
 #define INHERITANCE_TRUCK_H
-
 #include "Vehicle.h"
 
+using namespace std;
 class Truck: public Vehicle {
 private:
     double maxTowing;
