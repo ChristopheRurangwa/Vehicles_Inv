@@ -7,7 +7,14 @@
 
 
 class Car {
+private:
+    int doors;
+public:
+    Car(int doors);
 
+    int getDoors() const;
+
+    void setDoors(int doors);
 };
 
 
