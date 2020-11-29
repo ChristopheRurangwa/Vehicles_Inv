@@ -5,6 +5,7 @@
 #ifndef INHERITANCE_VEHICLE_H
 #define INHERITANCE_VEHICLE_H
 #include <string>
+#include <iostream>
 using namespace std;
 
 class Vehicle {
@@ -37,7 +38,7 @@ public:
     void setMileage(int mileage);
 
     void setPrice(double price);
-
+    void displayInfo(Vehicle any);
 };
 
 

@@ -39,3 +39,11 @@ void Vehicle::setMileage(int mileage) {
 void Vehicle::setPrice(double price) {
     Vehicle::price = price;
 }
+void Vehicle::displayInfo(Vehicle anyVehicle) {
+
+    cout<<anyVehicle.getMake()<<endl;
+    cout<<anyVehicle.getYear()<<endl;
+    cout<<anyVehicle.getMileage()<<endl;
+    cout<<anyVehicle.getPrice()<<endl;
+
+}
