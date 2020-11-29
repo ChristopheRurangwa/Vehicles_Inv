@@ -27,9 +27,19 @@ Use a source code management tool as you develop this program.
 using namespace std;
 
 int main() {
+    Vehicle veh;
     string manufac;
     int year;
+    int doors;
 
+    Car car;
+    string manufacCar;
+    int yearCar;
+
+    Truck tru;
+    string manTruc;
+    int yearTruc;
+    int capacity;
 
 
     cout<< "Vehicle Program\n\n";
@@ -37,11 +47,35 @@ int main() {
     cout<<"Enter the manufacturer: ";getline(cin,manufac);cout<<"\n";
     cout<<"Enter the year built: ";cin>>year;cout<<"\n";
     cout<<"Vehicle Information: "<<endl;
-
-    cout<<"Manufacturer: "<<manufac;cout<<endl;
-    cout<<"Year Built: "<<year;cout<<endl;
-
+    veh.setManufact(manufac);
+    veh.setYear(year);
     Vehicle (year,manufac);
+    veh.displayInfo(veh);
+
+    cout<< "Car: "<<endl;
+    cout<<"Enter the manufacturer: ";cin>>manufacCar;cout<<"\n";
+    cout<<"Enter the year built: ";cin>>yearCar;cout<<"\n";
+    cout<<"Number of doors: ";cin>>doors;cout<<"\n";
+    cout<<"Vehicle Information: "<<endl;
+    car.setManufact(manufacCar);
+    car.setYear(yearCar);
+    car.setDoors(doors);
+    Car(car.getDoors());//stores door number
+    Vehicle(yearCar,manufacCar);
+    car.displayInfo(car);
+
+    cout<< "Truck: "<<endl;
+    cout<<"Enter the manufacturer: ";(cin>>manTruc);cout<<"\n";
+    cout<<"Enter the year built: ";cin>>yearTruc;cout<<"\n";
+    cout<<"Enter the towing capacity: ";cin>>capacity;cout<<endl;
+    cout<<"Vehicle Information: "<<endl;
+    tru.setManufact(manTruc);
+    tru.setYear(yearTruc);
+    tru.setMaxTowing(capacity);
+    Vehicle (year,manufac);
+    Truck(tru.getMaxTowing());//store towing capacity
+    veh.displayInfo(tru);
+
 
     return 0;
 }

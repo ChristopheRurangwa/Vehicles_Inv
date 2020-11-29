@@ -15,12 +15,12 @@ int Car::getDoors() const {
 void Car::setDoors(int doors) {
     Car::doors = doors;
 }
-void displayInfo(Vehicle &any){
-    Car car;
+void Car::displayInfo(Car &any){
 
-    cout<<any.getManufact()<<endl;
-    cout<<any.getYear()<<endl;
-    cout<<car.getDoors()<<endl;
+
+    cout<<"Manufacturer: "<<any.getManufact()<<endl;
+    cout<<"Year Built: "<<any.getYear()<<endl;
+    cout<<"Doors: "<<any.getDoors()<<endl;
 
 
 }

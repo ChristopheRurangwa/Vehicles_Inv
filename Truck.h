@@ -12,6 +12,9 @@ private:
     double maxTowing;
 public:
     Truck():Vehicle(){
+        maxTowing=0;
+    }
+    Truck( int maxTowing){
        maxTowing=0;
     }
 

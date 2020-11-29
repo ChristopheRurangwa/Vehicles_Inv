@@ -22,7 +22,7 @@ public:
     int getDoors() const;
 
     void setDoors(int doors);
-    void displayInfo(Car any);
+    void displayInfo(Car &any);
 };
 
 

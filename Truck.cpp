@@ -16,7 +16,8 @@ void Truck::setMaxTowing(double maxTowing) {
 
 void Vehicle::displayInfo(Vehicle &any) {
 Truck tck;
-    cout<<any.getManufact()<<endl;
-    cout<<any.getYear()<<endl;
-    cout<<tck.getMaxTowing()<<endl;
+    cout<<"Manufacturer: "<<any.getManufact()<<endl;
+    cout<<"Year Built: "<<any.getYear()<<endl;
+    cout<<"Towing Capacity: "<<tck.getMaxTowing()<<endl;
 }
+
