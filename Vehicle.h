@@ -13,32 +13,34 @@ class Vehicle {
     //member variables
 
 private:
-    string make;
+    string manufact;
     int year;
-    int mileage;
-    double price;
+
 
     //constructor
 
 public:
-    Vehicle(const string &make, int year, int mileage, double price);
+    Vehicle(){
+        manufact="";
+        year=0;
+    }
 
-    const string &getMake() const;
+    Vehicle( int year,string manufact){
+        manufact=manufact;
+        year=year;
+
+
+    }
+
+    const string &getManufact() const;
+
+    void setManufact(const string &manufact);
 
     int getYear() const;
 
-    int getMileage() const;
-
-    double getPrice() const;
-
-    void setMake(const string &make);
-
     void setYear(int year);
 
-    void setMileage(int mileage);
-
-    void setPrice(double price);
-    void displayInfo(Vehicle any);
+   void displayInfo(Vehicle &any); //allows polymorphism
 };
 
 

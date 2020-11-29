@@ -6,15 +6,23 @@
 #define INHERITANCE_CAR_H
 
 
-class Car {
+#include "Vehicle.h"
+
+class Car: public Vehicle {
 private:
     int doors;
 public:
-    Car(int doors);
+    Car():Vehicle(){
+        doors=0;
+    }
+    Car(int doors){
+        doors=doors;
+    };
 
     int getDoors() const;
 
     void setDoors(int doors);
+    void displayInfo(Car any);
 };
 
 
